@@ -1,0 +1,32 @@
+*{margin: 0; padding: 10px;}
+
+body, html{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: #fbf9fa;
+    padding: 0;
+}
+
+#main{
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+}
+
+section, article{
+    height: 100%;
+}
+
+h1, h3{
+    font-size: 80px;
+    color: #2b2024;
+}
+
+h6{ font-size: 30px;}
+
+p{ font-size: 20px;}
