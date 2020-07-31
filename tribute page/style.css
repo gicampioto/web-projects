@@ -1,8 +1,6 @@
 *{margin: 0; padding: 10px;}
 
 body, html{
-    height: 100%;
-    width: 80%;
     margin: auto;
     background-color: #fbf9fa;
     padding: 0;
@@ -11,22 +9,33 @@ body, html{
 #main{
     font-family: 'Sniglet', cursive;
     text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 img{
-    max-width: 80%;
+    max-width: 50%;
     height: auto;
 }
 
-section, article{
-    height: 100%;
+article{
+    max-width: 75ch;
+    margin: auto;
+    margin-top: 3em;
 }
 
 h1, h3{
-    font-size: 80px;
+    font-size: 5em;
     color: #2b2024;
 }
 
-h6{ font-size: 30px;}
+h6{font-size: 2em;}
 
-p{ font-size: 20px;}
+p, li{font-size: 1.2em;}
+
+section{padding-top: 0;}
+
+li{text-align: left;}
+
+#img-caption, #img-div{padding: 0;}
+
