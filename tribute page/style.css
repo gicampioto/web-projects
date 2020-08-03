@@ -4,6 +4,7 @@ body, html{
     margin: auto;
     background-color: #fbf9fa;
     padding: 0;
+    font-size: 62.5%;
 }
 
 #main{
@@ -20,21 +21,22 @@ img{
 
 article{
     margin: auto;
-    margin-top: 3em;
+    margin-top: 3rem;
 }
 
-article>p, li{max-width: 75ch;}
+article>p, li{max-width: 70ch;}
 
 h1, h3{
-    font-size: 5em;
+    font-size: 7rem;
     color: #2b2024;
 }
 
 .albuns{
     width: 200px;
     height: 200px;
-    margin: 0.2em;
-    background-color: rgba(26, 13, 0, 0.1);   
+    margin: 0.2rem;
+    background-color: rgba(26, 13, 0, 0.1);
+    padding: 0;
 }
 
 .alb-container{
@@ -43,9 +45,9 @@ h1, h3{
     justify-content: center;
 }
 
-h6{font-size: 2em;}
+h6{font-size: 4rem;}
 
-p, li{font-size: 1.2em;}
+p, li{font-size: 1.7rem;}
 
 section{padding-top: 0;}
 
