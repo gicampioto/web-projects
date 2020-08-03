@@ -19,14 +19,28 @@ img{
 }
 
 article{
-    max-width: 75ch;
     margin: auto;
     margin-top: 3em;
 }
 
+article>p, li{max-width: 75ch;}
+
 h1, h3{
     font-size: 5em;
     color: #2b2024;
+}
+
+.albuns{
+    width: 200px;
+    height: 200px;
+    margin: 0.2em;
+    background-color: rgba(26, 13, 0, 0.1);   
+}
+
+.alb-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 h6{font-size: 2em;}
