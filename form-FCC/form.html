@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yordles</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p class="titulo">F</p>
+        <p class="titulo b">O</p>
+        <p class="titulo">R</p>
+        <p class="titulo b">M</p>
+    </header>
+    <main>
+        <h1 id="description">Who is the cutest yordle?</h1>
+        <form id="survey-form">
+            <div class="box one">
+
+                <div class="input-form">
+                    <label for="name-label">Name</label>
+                    <input id="name-label" type="text" name="name" placeholder="Enter your name" required="required" >
+                </div>
+
+                <div class="input-form">
+                    <label for="email-label">Email</label>
+                    <input id="email-label" type="email" name="email" placeholder="Enter your email"
+                        required="required">
+                </div>
+
+                <div class="input-form">
+                    <label for="number-label">Your level</label>
+                    <input id="number-label" type="number" name="level" placeholder="Enter your level" min="0"
+                        max="500" required="required">
+                </div>
+
+                <div class="input-form">
+                    <p>Who is your favorite yordle?</p>
+                    <select id="dropdown" name="favorite" size="1">
+                        <option value="">Select your favorite</option>
+                        <option value="corki">Corki</option>
+                        <option value="fizz">Fizz</option>
+                        <option value="gnar">Gnar</option>
+                        <option value="heimerdinger">Haimerdinger</option>
+                        <option value="kennen">Kennen</option>
+                        <option value="kled">Kled</option>
+                        <option value="lulu">Lulu</option>
+                        <option value="poppy">Poppy</option>
+                        <option value="rumble">Rumble</option>
+                        <option value="teemo">Teemo</option>
+                        <option value="tristana">Tristana</option>
+                        <option value="veigar">Veigar</option>
+                        <option value="zigss">Ziggs</option>
+                    </select>
+                </div>
+
+                <div class="input-form">
+                    <p>Would you recomend became main Yordle?</p>
+                    <label class="choices"><input type="radio" name="recomend" value="hell-no"> Hell no</label>
+                    <label class="choices"><input type="radio" name="recomend" value="not-sure" checked> Not sure</label>
+                    <label class="choices"><input type="radio" name="recomend" value="definitely"> Definitely</label>
+                </div>
+
+                <div class="input-form">
+                    <p>Who do you think deserve a new skin?</p>
+                    <label class="choices"><input type="checkbox" name="new-skin" value="fizz"> Fizz</label>
+                    <label class="choices"><input type="checkbox" name="new-skin" value="gnar"> Gnar</label>
+                    <label class="choices"><input type="checkbox" name="new-skin" value="lulu"> Lulu</label>
+                    <label class="choices"><input type="checkbox" name="new-skin" value="poppy"> Poppy</label>
+                </div>
+
+                <div class="input-form">
+                    <p>Who do you think is the cutest yordle?</p>
+                    <textarea name="user-opnion" placeholder="Enter your answer here..."></textarea>
+                </div>
+
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
