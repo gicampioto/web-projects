@@ -20,8 +20,6 @@
     html{font-size: 16px;}
     #info, .alb-container{
         flex-wrap: nowrap;
-        flex-direction: row;
-    }
 }
 
 img{
@@ -38,8 +36,8 @@ img{
 .alb-container{flex-wrap: wrap;}
 
 #title, #info, article{
-    margin-top: 2em;
-    padding: 1em;
+    margin-bottom: 2em;
+    padding: .8em;
     font-family: var(--ff-body);
 }
 
