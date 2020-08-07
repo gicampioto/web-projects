@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; text-align: center;}
+*{margin: 0; padding: 0.2em; text-align: center;}
 
 :root{
     --light-clr: #fbf9fa;
@@ -9,23 +9,35 @@
     --fw-heading: 400;
 }
 
-@media (max-width: 700px){html{font-size: 8px;}}
+@media (max-width: 600px){
+    html{font-size: 10px;}
+    #info, .alb-container{
+        flex-direction: column;
+    }
+}
 
-@media (min-width: 700px){html{font-size: 16px;}}
+@media (min-width: 600px){
+    html{font-size: 16px;}
+    #info, .alb-container{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
 
-#image{
+img{
     max-width: 50%;
     height: auto;
 }
 
-#tribute-info, .alb-container{
+#info, .alb-container{
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
 
-#title, #tribute-info, article{
+.alb-container{flex-wrap: wrap;}
+
+#title, #info, article{
     margin-top: 2em;
     padding: 1em;
     font-family: var(--ff-body);
@@ -33,19 +45,24 @@
 
 h1, h3{
     font-family: var(--ff-heading);
-    font-weight: 400;
     font-size: 4rem;
 }
 
-h6{font-size: 2rem;}
-
-.albums>p{font-size: 1rem;}
+.albuns{
+    font-size: 1rem;
+    margin: 0.5em;
+    width: 13rem;
+    height: 13rem;
+    box-shadow: 10px 10px 10px var(--opaque-clr);
+}
 
 p, ul{
     max-width: 75ch;
     margin: auto;
     font-size: 1.2rem;
 }
+
+li{text-align: left;}
 
 /* css antigo
 body, html{
