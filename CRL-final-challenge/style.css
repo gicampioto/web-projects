@@ -1,0 +1,191 @@
+*{box-sizing: border-box;}
+
+:root{
+    --darkerPrimeryCrl: #2E323F;
+    --primeryCrl: #3B4050;
+    --lightPrimeryCrl: #6F737F;
+    --secundaryCrl: #A59678;
+    --ffPrimery: "Oswald";
+    --ffSecundary: "Montserrat";
+}
+
+/*more than 1 element*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ffPrimery), Arial;
+}
+
+.text{ /*for all <p>*/
+    font-family: var(--ffSecundary), Arial;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em 0;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 3em 0;
+}
+
+
+/*heading style*/
+img{
+    width: 50px;
+    height: auto;
+}
+
+.nav{
+    background-color: var(--darkerPrimeryCrl);
+    font-size: 1.125rem;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item{
+    margin: .5em;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover,
+.link:focus{
+    opacity: .5; 
+}
+
+.button{
+    background-color: var(--secundaryCrl);
+    padding: .3em 1.5em;
+    border-radius: 100px;
+}
+
+.title{
+    color: #fff;
+    font-size: 1.6666em;
+}
+
+.title--secondary{
+    color: var(--secundaryCrl);
+}
+
+/*intro section*/
+.intro{
+    background-color: var(--primeryCrl);
+    font-size: 1.5rem;
+}
+
+.intro__title{
+    display: inline;
+    font-size: 2.8rem;
+}
+
+.intro__text{
+    margin: 3rem 0;
+    color: var(--secundaryCrl);
+}
+
+/*first section*/
+.section-one{
+    background-color: #eee;
+    font-size: 1.125rem;
+}
+
+/*second section*/
+.section-two{
+    font-size: 1.3125rem;
+}
+
+.img{
+    width: 80%;
+    height: auto;
+}
+
+.aside__item{
+    background-color: var(--primeryCrl);
+    margin: 2rem;
+    font-size: 1.125rem;
+    padding: .5rem 2rem 1rem 2rem;
+    color: #fff;
+}
+
+/*bottom*/
+.footer{
+    background-color: var(--primeryCrl);
+    color: #fff;
+}
+
+@media (max-width: 1100px){
+    .button{
+        display: inline-block;
+    }
+
+    .list + .list{
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    img{
+        margin: auto;
+    }
+}
+
+@media (min-width: 1100px){    
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container__nav{
+        justify-content: space-between;
+    }
+
+    .intro,
+    .col{
+        text-align: left;
+    }
+    
+
+    .nav__list{
+        display: flex;
+    }
+
+    .intro__title{
+        font-size: 90px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .col{
+        min-width: 20%;
+    }
+
+    .col__one{
+        margin: 1.2em;
+    }
+
+    .col__footer{
+        padding-right: 4rem;
+    }
+
+    .aside{
+        min-width: 30%;
+    }
+
+    .intro__col{
+        align-self: flex-end;
+        margin-bottom: 2rem;
+    }
+}
